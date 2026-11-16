@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Noman Khan · Developer building Slate and Flyte</title>
+  <meta name="description" content="Noman Khan is a developer who turns ideas into simple, useful products, including Slate (slate.noman.io) and Flyte (flyte.noman.io)." />
+  <meta name="author" content="Noman Khan" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#191919" />
+  <link rel="canonical" href="https://noman.io/" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👋</text></svg>" />
+
+  <!-- Open Graph / social previews -->
+  <meta property="og:type" content="profile" />
+  <meta property="og:site_name" content="Noman Khan" />
+  <meta property="og:title" content="Noman Khan · Developer building Slate and Flyte" />
+  <meta property="og:description" content="A developer who turns ideas into simple, useful products." />
+  <meta property="og:url" content="https://noman.io/" />
+  <meta property="og:locale" content="en_US" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Noman Khan · Developer building Slate and Flyte" />
+  <meta name="twitter:description" content="A developer who turns ideas into simple, useful products." />
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "https://noman.io/#person",
+        "name": "Noman Khan",
+        "givenName": "Noman",
+        "familyName": "Khan",
+        "url": "https://noman.io/",
+        "jobTitle": "Developer",
+        "sameAs": ["https://github.com/noman-k", "https://www.linkedin.com/in/noman-khan"]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://noman.io/#website",
+        "url": "https://noman.io/",
+        "name": "Noman Khan",
+        "author": { "@id": "https://noman.io/#person" }
+      },
+      {
+        "@type": "ItemList",
+        "name": "Projects",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@type": "WebApplication",
+              "name": "Slate",
+              "url": "https://slate.noman.io",
+              "applicationCategory": "WebApplication",
+              "creator": { "@id": "https://noman.io/#person" }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@type": "WebApplication",
+              "name": "Flyte",
+              "url": "https://flyte.noman.io",
+              "applicationCategory": "WebApplication",
+              "creator": { "@id": "https://noman.io/#person" }
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #191919;
+      --text: rgba(255, 255, 255, 0.87);
+      --muted: rgba(255, 255, 255, 0.5);
+      --faint: rgba(255, 255, 255, 0.32);
+      --border: rgba(255, 255, 255, 0.08);
+      --hover: rgba(255, 255, 255, 0.05);
+      --callout: #222222;
+    }
+
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .page {
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 96px 16px 96px;
+    }
+
+    .icon { font-size: 64px; line-height: 1; margin-bottom: 20px; user-select: none; }
+    h1 { font-size: 38px; font-weight: 700; line-height: 1.2; margin: 0 0 14px; letter-spacing: -0.015em; }
+    .lead { color: var(--muted); margin: 0 0 8px; font-size: 17px; }
+    .lead a { color: var(--text); text-decoration: none; border-bottom: 1px solid var(--faint); }
+    .lead a:hover { border-bottom-color: var(--text); }
+
+    h2 {
+      font-size: 13px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.06em;
+      color: var(--faint);
+      margin: 56px 0 8px;
+    }
+
+    .projects { list-style: none; margin: 0; padding: 0; }
+    .projects li + li { border-top: 1px solid var(--border); }
+    .project {
+      display: flex; align-items: center; gap: 14px;
+      padding: 12px 10px; margin: 0 -10px;
+      border-radius: 8px;
+      color: inherit; text-decoration: none;
+      transition: background 120ms ease;
+    }
+    .project:hover { background: var(--hover); }
+    .app-icon {
+      width: 44px; height: 44px; flex-shrink: 0;
+      border-radius: 11px;
+      display: block; object-fit: cover;
+      box-shadow: inset 0 0 0 1px rgba(255,255,255,0.08), 0 1px 2px rgba(0,0,0,0.4);
+    }
+    .project-text { flex: 1; min-width: 0; }
+    .project-name { font-weight: 600; font-size: 16px; line-height: 1.3; }
+    .project-url { color: var(--muted); font-size: 14px; }
+    .chev { color: var(--faint); font-size: 16px; transition: transform 120ms ease, color 120ms ease; }
+    .project:hover .chev { color: var(--text); transform: translate(2px, -2px); }
+
+    @media (max-width: 560px) {
+      .page { padding-top: 64px; }
+      h1 { font-size: 32px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <div class="icon" aria-hidden="true">👋</div>
+    <h1>Hi, I'm Noman</h1>
+    <p class="lead">I'm a developer who enjoys turning ideas into simple, useful products.</p>
+    <p class="lead">Find me on <a href="https://github.com/noman-k" rel="me">GitHub</a> and <a href="https://www.linkedin.com/in/noman-khan" rel="me">LinkedIn</a>.</p>
+
+    <h2>Projects</h2>
+    <ul class="projects">
+      <li>
+        <a class="project" href="https://slate.noman.io" target="_blank" rel="noopener">
+          <img class="app-icon" src="icons/slate.svg" alt="Slate app icon" width="44" height="44" />
+          <div class="project-text">
+            <div class="project-name">Slate</div>
+            <div class="project-url">slate.noman.io</div>
+          </div>
+          <span class="chev" aria-hidden="true">↗</span>
+        </a>
+      </li>
+      <li>
+        <a class="project" href="https://flyte.noman.io" target="_blank" rel="noopener">
+          <img class="app-icon" src="icons/flyte.png" alt="Flyte app icon" width="44" height="44" />
+          <div class="project-text">
+            <div class="project-name">Flyte</div>
+            <div class="project-url">flyte.noman.io</div>
+          </div>
+          <span class="chev" aria-hidden="true">↗</span>
+        </a>
+      </li>
+    </ul>
+  </main>
+</body>
+</html>
